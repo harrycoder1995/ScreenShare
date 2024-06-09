@@ -23,6 +23,7 @@
 		F60772A92C15D00D00438CE0 /* JoiningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772A82C15D00D00438CE0 /* JoiningView.swift */; };
 		F60772AB2C15D01900438CE0 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772AA2C15D01900438CE0 /* MeetingView.swift */; };
 		F60772AD2C15D22300438CE0 /* RPSystemBroadcastPickerView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772AC2C15D22300438CE0 /* RPSystemBroadcastPickerView+Ext.swift */; };
+		F60772B22C15DDC500438CE0 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772B12C15DDC400438CE0 /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		F60772A82C15D00D00438CE0 /* JoiningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoiningView.swift; sourceTree = "<group>"; };
 		F60772AA2C15D01900438CE0 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		F60772AC2C15D22300438CE0 /* RPSystemBroadcastPickerView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RPSystemBroadcastPickerView+Ext.swift"; sourceTree = "<group>"; };
+		F60772B12C15DDC400438CE0 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		F60772582C1434D200438CE0 /* ScreenShare */ = {
 			isa = PBXGroup;
 			children = (
+				F60772B02C15DDBA00438CE0 /* Util */,
 				F60772AF2C15D2D700438CE0 /* Resources */,
 				F607726B2C143B4A00438CE0 /* View */,
 				F607726A2C143B4000438CE0 /* App */,
@@ -185,6 +188,14 @@
 				F607727F2C14801100438CE0 /* ScreenShare.entitlements */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F60772B02C15DDBA00438CE0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F60772B12C15DDC400438CE0 /* NetworkMonitor.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F607725C2C1434D200438CE0 /* ContentView.swift in Sources */,
+				F60772B22C15DDC500438CE0 /* NetworkMonitor.swift in Sources */,
 				F60772AD2C15D22300438CE0 /* RPSystemBroadcastPickerView+Ext.swift in Sources */,
 				F60772A92C15D00D00438CE0 /* JoiningView.swift in Sources */,
 				F60772AB2C15D01900438CE0 /* MeetingView.swift in Sources */,

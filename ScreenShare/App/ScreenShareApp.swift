@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ScreenShareApp: App {
+    @State private var networkMonitor = NetworkMonitor()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(networkMonitor)
         }
     }
 }
