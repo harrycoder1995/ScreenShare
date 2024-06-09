@@ -11,7 +11,7 @@ import HMSRoomModels
 struct ContentView: View {
     
     @Environment(NetworkMonitor.self) private var networkMonitor
-    @ObservedObject var roomModel = HMSRoomModel(roomCode: "crs-tzqn-wuz",options: .init(appGroupName: "group.harendrarana.screenShare"))
+    @ObservedObject var roomModel = HMSRoomModel(roomCode: "crs-tzqn-wuz",options: .init(appGroupName: "group.harendrarana.screenShare",screenShareBroadcastExtensionBundleId: "com.harendra.ScreenShare.ScreenShareBroadcast"))
 
     
     var body: some View {
@@ -20,6 +20,10 @@ struct ContentView: View {
             //Check Internet Connection is available or not and update the view accordingly
             if networkMonitor.isConnected
             {
+                if roomModel.isBeingStreamed {
+                   Text("isBeingStreamed")
+                }
+                
                 switch roomModel.roomState {
                 case .notJoined:
                     JoiningView()

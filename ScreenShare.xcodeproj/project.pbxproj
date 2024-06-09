@@ -11,12 +11,8 @@
 		F607725C2C1434D200438CE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607725B2C1434D200438CE0 /* ContentView.swift */; };
 		F607725E2C1434D500438CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F607725D2C1434D500438CE0 /* Assets.xcassets */; };
 		F60772612C1434D500438CE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60772602C1434D500438CE0 /* Preview Assets.xcassets */; };
-		F60772742C147FB500438CE0 /* HMSAnalyticsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F60772732C147FB500438CE0 /* HMSAnalyticsSDK */; };
 		F60772762C147FB500438CE0 /* HMSBroadcastExtensionSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F60772752C147FB500438CE0 /* HMSBroadcastExtensionSDK */; };
-		F60772782C147FB500438CE0 /* HMSHLSPlayerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F60772772C147FB500438CE0 /* HMSHLSPlayerSDK */; };
 		F607727A2C147FB500438CE0 /* HMSRoomModels in Frameworks */ = {isa = PBXBuildFile; productRef = F60772792C147FB500438CE0 /* HMSRoomModels */; };
-		F607727C2C147FB500438CE0 /* HMSSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F607727B2C147FB500438CE0 /* HMSSDK */; };
-		F607727E2C147FB500438CE0 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = F607727D2C147FB500438CE0 /* WebRTC */; };
 		F60772872C148C1B00438CE0 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60772862C148C1B00438CE0 /* ReplayKit.framework */; };
 		F607728A2C148C1B00438CE0 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772892C148C1B00438CE0 /* SampleHandler.swift */; };
 		F607729D2C148C1C00438CE0 /* ScreenShareBroadcast.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F60772842C148C1B00438CE0 /* ScreenShareBroadcast.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -75,12 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F607727C2C147FB500438CE0 /* HMSSDK in Frameworks */,
-				F607727E2C147FB500438CE0 /* WebRTC in Frameworks */,
-				F60772782C147FB500438CE0 /* HMSHLSPlayerSDK in Frameworks */,
 				F60772762C147FB500438CE0 /* HMSBroadcastExtensionSDK in Frameworks */,
 				F607727A2C147FB500438CE0 /* HMSRoomModels in Frameworks */,
-				F60772742C147FB500438CE0 /* HMSAnalyticsSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,12 +209,8 @@
 			);
 			name = ScreenShare;
 			packageProductDependencies = (
-				F60772732C147FB500438CE0 /* HMSAnalyticsSDK */,
 				F60772752C147FB500438CE0 /* HMSBroadcastExtensionSDK */,
-				F60772772C147FB500438CE0 /* HMSHLSPlayerSDK */,
 				F60772792C147FB500438CE0 /* HMSRoomModels */,
-				F607727B2C147FB500438CE0 /* HMSSDK */,
-				F607727D2C147FB500438CE0 /* WebRTC */,
 			);
 			productName = ScreenShare;
 			productReference = F60772562C1434D200438CE0 /* ScreenShare.app */;
@@ -241,6 +229,8 @@
 			dependencies = (
 			);
 			name = ScreenShareBroadcast;
+			packageProductDependencies = (
+			);
 			productName = ScreenShareBroadcast;
 			productReference = F60772842C148C1B00438CE0 /* ScreenShareBroadcast.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -472,6 +462,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScreenShare/Resources/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to Camera to enable Video conferencing";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "ScreenShare needs access to Local Network to enable high quality video conferencing.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access to Microphone to enable Video conferencing";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -508,6 +499,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScreenShare/Resources/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to Camera to enable Video conferencing";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "ScreenShare needs access to Local Network to enable high quality video conferencing.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access to Microphone to enable Video conferencing";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -531,6 +523,7 @@
 		F60772A22C148C1C00438CE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenShareBroadcast/ScreenShareBroadcast.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -558,6 +551,7 @@
 		F60772A32C148C1C00438CE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenShareBroadcast/ScreenShareBroadcast.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -626,35 +620,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F60772732C147FB500438CE0 /* HMSAnalyticsSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */;
-			productName = HMSAnalyticsSDK;
-		};
 		F60772752C147FB500438CE0 /* HMSBroadcastExtensionSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */;
 			productName = HMSBroadcastExtensionSDK;
 		};
-		F60772772C147FB500438CE0 /* HMSHLSPlayerSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */;
-			productName = HMSHLSPlayerSDK;
-		};
 		F60772792C147FB500438CE0 /* HMSRoomModels */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */;
 			productName = HMSRoomModels;
-		};
-		F607727B2C147FB500438CE0 /* HMSSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */;
-			productName = HMSSDK;
-		};
-		F607727D2C147FB500438CE0 /* WebRTC */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */;
-			productName = WebRTC;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

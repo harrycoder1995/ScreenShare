@@ -22,7 +22,7 @@ struct MeetingView: View {
     var body: some View {
         VStack {
             List {
-                
+               
                 // If a participant is sharing their screen, show their screen at the top of the list
                 if roomModel.peersSharingScreen.count > 0 {
                     TabView {
