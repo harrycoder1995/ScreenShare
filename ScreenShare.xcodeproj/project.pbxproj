@@ -11,7 +11,43 @@
 		F607725C2C1434D200438CE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607725B2C1434D200438CE0 /* ContentView.swift */; };
 		F607725E2C1434D500438CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F607725D2C1434D500438CE0 /* Assets.xcassets */; };
 		F60772612C1434D500438CE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60772602C1434D500438CE0 /* Preview Assets.xcassets */; };
+		F60772742C147FB500438CE0 /* HMSAnalyticsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F60772732C147FB500438CE0 /* HMSAnalyticsSDK */; };
+		F60772762C147FB500438CE0 /* HMSBroadcastExtensionSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F60772752C147FB500438CE0 /* HMSBroadcastExtensionSDK */; };
+		F60772782C147FB500438CE0 /* HMSHLSPlayerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F60772772C147FB500438CE0 /* HMSHLSPlayerSDK */; };
+		F607727A2C147FB500438CE0 /* HMSRoomModels in Frameworks */ = {isa = PBXBuildFile; productRef = F60772792C147FB500438CE0 /* HMSRoomModels */; };
+		F607727C2C147FB500438CE0 /* HMSSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F607727B2C147FB500438CE0 /* HMSSDK */; };
+		F607727E2C147FB500438CE0 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = F607727D2C147FB500438CE0 /* WebRTC */; };
+		F60772872C148C1B00438CE0 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60772862C148C1B00438CE0 /* ReplayKit.framework */; };
+		F607728A2C148C1B00438CE0 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772892C148C1B00438CE0 /* SampleHandler.swift */; };
+		F607729D2C148C1C00438CE0 /* ScreenShareBroadcast.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F60772842C148C1B00438CE0 /* ScreenShareBroadcast.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F60772A92C15D00D00438CE0 /* JoiningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772A82C15D00D00438CE0 /* JoiningView.swift */; };
+		F60772AB2C15D01900438CE0 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772AA2C15D01900438CE0 /* MeetingView.swift */; };
+		F60772AD2C15D22300438CE0 /* RPSystemBroadcastPickerView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772AC2C15D22300438CE0 /* RPSystemBroadcastPickerView+Ext.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F607729B2C148C1C00438CE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F607724E2C1434D100438CE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F60772832C148C1B00438CE0;
+			remoteInfo = ScreenShareBroadcast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F60772A42C148C1C00438CE0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F607729D2C148C1C00438CE0 /* ScreenShareBroadcast.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F60772562C1434D200438CE0 /* ScreenShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +55,17 @@
 		F607725B2C1434D200438CE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F607725D2C1434D500438CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F60772602C1434D500438CE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F607727F2C14801100438CE0 /* ScreenShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenShare.entitlements; sourceTree = "<group>"; };
+		F60772842C148C1B00438CE0 /* ScreenShareBroadcast.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenShareBroadcast.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60772862C148C1B00438CE0 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		F60772892C148C1B00438CE0 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		F607728B2C148C1B00438CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F60772922C148C1B00438CE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F60772A62C1492DF00438CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F60772A72C1494D300438CE0 /* ScreenShareBroadcast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenShareBroadcast.entitlements; sourceTree = "<group>"; };
+		F60772A82C15D00D00438CE0 /* JoiningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoiningView.swift; sourceTree = "<group>"; };
+		F60772AA2C15D01900438CE0 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
+		F60772AC2C15D22300438CE0 /* RPSystemBroadcastPickerView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RPSystemBroadcastPickerView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +73,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F607727C2C147FB500438CE0 /* HMSSDK in Frameworks */,
+				F607727E2C147FB500438CE0 /* WebRTC in Frameworks */,
+				F60772782C147FB500438CE0 /* HMSHLSPlayerSDK in Frameworks */,
+				F60772762C147FB500438CE0 /* HMSBroadcastExtensionSDK in Frameworks */,
+				F607727A2C147FB500438CE0 /* HMSRoomModels in Frameworks */,
+				F60772742C147FB500438CE0 /* HMSAnalyticsSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60772812C148C1B00438CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60772872C148C1B00438CE0 /* ReplayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				F60772582C1434D200438CE0 /* ScreenShare */,
+				F60772882C148C1B00438CE0 /* ScreenShareBroadcast */,
+				F60772852C148C1B00438CE0 /* Frameworks */,
 				F60772572C1434D200438CE0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F60772562C1434D200438CE0 /* ScreenShare.app */,
+				F60772842C148C1B00438CE0 /* ScreenShareBroadcast.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,9 +115,10 @@
 		F60772582C1434D200438CE0 /* ScreenShare */ = {
 			isa = PBXGroup;
 			children = (
-				F60772592C1434D200438CE0 /* ScreenShareApp.swift */,
-				F607725B2C1434D200438CE0 /* ContentView.swift */,
-				F607725D2C1434D500438CE0 /* Assets.xcassets */,
+				F60772AF2C15D2D700438CE0 /* Resources */,
+				F607726B2C143B4A00438CE0 /* View */,
+				F607726A2C143B4000438CE0 /* App */,
+				F60772AE2C15D2C100438CE0 /* Extension */,
 				F607725F2C1434D500438CE0 /* Preview Content */,
 			);
 			path = ScreenShare;
@@ -67,6 +132,61 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F607726A2C143B4000438CE0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F60772592C1434D200438CE0 /* ScreenShareApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F607726B2C143B4A00438CE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F607725B2C1434D200438CE0 /* ContentView.swift */,
+				F60772A82C15D00D00438CE0 /* JoiningView.swift */,
+				F60772AA2C15D01900438CE0 /* MeetingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F60772852C148C1B00438CE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F60772862C148C1B00438CE0 /* ReplayKit.framework */,
+				F60772922C148C1B00438CE0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F60772882C148C1B00438CE0 /* ScreenShareBroadcast */ = {
+			isa = PBXGroup;
+			children = (
+				F60772892C148C1B00438CE0 /* SampleHandler.swift */,
+				F607728B2C148C1B00438CE0 /* Info.plist */,
+				F60772A72C1494D300438CE0 /* ScreenShareBroadcast.entitlements */,
+			);
+			path = ScreenShareBroadcast;
+			sourceTree = "<group>";
+		};
+		F60772AE2C15D2C100438CE0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F60772AC2C15D22300438CE0 /* RPSystemBroadcastPickerView+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F60772AF2C15D2D700438CE0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F607725D2C1434D500438CE0 /* Assets.xcassets */,
+				F60772A62C1492DF00438CE0 /* Info.plist */,
+				F607727F2C14801100438CE0 /* ScreenShare.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +197,42 @@
 				F60772522C1434D200438CE0 /* Sources */,
 				F60772532C1434D200438CE0 /* Frameworks */,
 				F60772542C1434D200438CE0 /* Resources */,
+				F60772A42C148C1C00438CE0 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F607729C2C148C1C00438CE0 /* PBXTargetDependency */,
+			);
+			name = ScreenShare;
+			packageProductDependencies = (
+				F60772732C147FB500438CE0 /* HMSAnalyticsSDK */,
+				F60772752C147FB500438CE0 /* HMSBroadcastExtensionSDK */,
+				F60772772C147FB500438CE0 /* HMSHLSPlayerSDK */,
+				F60772792C147FB500438CE0 /* HMSRoomModels */,
+				F607727B2C147FB500438CE0 /* HMSSDK */,
+				F607727D2C147FB500438CE0 /* WebRTC */,
+			);
+			productName = ScreenShare;
+			productReference = F60772562C1434D200438CE0 /* ScreenShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F60772832C148C1B00438CE0 /* ScreenShareBroadcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60772A12C148C1C00438CE0 /* Build configuration list for PBXNativeTarget "ScreenShareBroadcast" */;
+			buildPhases = (
+				F60772802C148C1B00438CE0 /* Sources */,
+				F60772812C148C1B00438CE0 /* Frameworks */,
+				F60772822C148C1B00438CE0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ScreenShare;
-			productName = ScreenShare;
-			productReference = F60772562C1434D200438CE0 /* ScreenShare.app */;
-			productType = "com.apple.product-type.application";
+			name = ScreenShareBroadcast;
+			productName = ScreenShareBroadcast;
+			productReference = F60772842C148C1B00438CE0 /* ScreenShareBroadcast.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +247,9 @@
 					F60772552C1434D200438CE0 = {
 						CreatedOnToolsVersion = 15.4;
 					};
+					F60772832C148C1B00438CE0 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = F60772512C1434D100438CE0 /* Build configuration list for PBXProject "ScreenShare" */;
@@ -111,11 +261,15 @@
 				Base,
 			);
 			mainGroup = F607724D2C1434D100438CE0;
+			packageReferences = (
+				F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */,
+			);
 			productRefGroup = F60772572C1434D200438CE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F60772552C1434D200438CE0 /* ScreenShare */,
+				F60772832C148C1B00438CE0 /* ScreenShareBroadcast */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +284,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F60772822C148C1B00438CE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,11 +299,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				F607725C2C1434D200438CE0 /* ContentView.swift in Sources */,
+				F60772AD2C15D22300438CE0 /* RPSystemBroadcastPickerView+Ext.swift in Sources */,
+				F60772A92C15D00D00438CE0 /* JoiningView.swift in Sources */,
+				F60772AB2C15D01900438CE0 /* MeetingView.swift in Sources */,
 				F607725A2C1434D200438CE0 /* ScreenShareApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F60772802C148C1B00438CE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F607728A2C148C1B00438CE0 /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F607729C2C148C1C00438CE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F60772832C148C1B00438CE0 /* ScreenShareBroadcast */;
+			targetProxy = F607729B2C148C1C00438CE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F60772622C1434D500438CE0 /* Debug */ = {
@@ -197,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -267,13 +447,20 @@
 		F60772652C1434D500438CE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenShare/Resources/ScreenShare.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreenShare/Preview Content\"";
+				DEVELOPMENT_TEAM = 3WN7U3RVNP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenShare/Resources/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to Camera to enable Video conferencing";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access to Microphone to enable Video conferencing";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -286,6 +473,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.harendra.ScreenShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,13 +483,20 @@
 		F60772662C1434D500438CE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenShare/Resources/ScreenShare.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreenShare/Preview Content\"";
+				DEVELOPMENT_TEAM = 3WN7U3RVNP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenShare/Resources/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to Camera to enable Video conferencing";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access to Microphone to enable Video conferencing";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,6 +509,61 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.harendra.ScreenShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F60772A22C148C1C00438CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3WN7U3RVNP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenShareBroadcast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenShareBroadcast;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harendra.ScreenShare.ScreenShareBroadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F60772A32C148C1C00438CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3WN7U3RVNP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenShareBroadcast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenShareBroadcast;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harendra.ScreenShare.ScreenShareBroadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,7 +591,60 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		F60772A12C148C1C00438CE0 /* Build configuration list for PBXNativeTarget "ScreenShareBroadcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60772A22C148C1C00438CE0 /* Debug */,
+				F60772A32C148C1C00438CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/100mslive/100ms-roomkit-models-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F60772732C147FB500438CE0 /* HMSAnalyticsSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */;
+			productName = HMSAnalyticsSDK;
+		};
+		F60772752C147FB500438CE0 /* HMSBroadcastExtensionSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */;
+			productName = HMSBroadcastExtensionSDK;
+		};
+		F60772772C147FB500438CE0 /* HMSHLSPlayerSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */;
+			productName = HMSHLSPlayerSDK;
+		};
+		F60772792C147FB500438CE0 /* HMSRoomModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */;
+			productName = HMSRoomModels;
+		};
+		F607727B2C147FB500438CE0 /* HMSSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */;
+			productName = HMSSDK;
+		};
+		F607727D2C147FB500438CE0 /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F60772722C147FB500438CE0 /* XCRemoteSwiftPackageReference "100ms-roomkit-models-ios" */;
+			productName = WebRTC;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F607724E2C1434D100438CE0 /* Project object */;
 }
