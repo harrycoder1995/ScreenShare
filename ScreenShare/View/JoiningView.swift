@@ -8,10 +8,13 @@
 import SwiftUI
 import HMSRoomModels
 
+//Joining View with text Field and Button
 struct JoiningView: View {
     
-    @EnvironmentObject var roomModel: HMSRoomModel
+    @StateObject var roomModel: HMSRoomModel
     @State var username: String = ""
+    @State var isMicMute = false
+    @State var isVideoMute = false
     
     var body: some View {
         VStack {
@@ -25,14 +28,20 @@ struct JoiningView: View {
             .padding()
            
             HStack{
-                Button(action: {}, label: {
-                    Image(systemName: "video.slash")
+                Button(action: {
+                   isVideoMute = !isVideoMute
+                    roomModel.toggleCamera()
+                }, label: {
+                    Image(systemName: isVideoMute ? "video.slash": "video")
                 })
                 
                 Spacer()
                 
-                Button(action: {}, label: {
-                    Image(systemName: "mic.slash.fill")
+                Button(action: {
+                    isMicMute.toggle()
+                    roomModel.toggleMic()
+                }, label: {
+                    Image(systemName: isMicMute ? "mic.slash.fill" : "mic.fill")
                 })
             }.frame(width: 100)
             
@@ -53,5 +62,5 @@ struct JoiningView: View {
 }
 
 #Preview {
-    JoiningView(username: "Harendra")
+    JoiningView(roomModel: HMSRoomModel(), username: "Harendra")
 }

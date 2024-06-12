@@ -20,6 +20,8 @@
 		F60772AB2C15D01900438CE0 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772AA2C15D01900438CE0 /* MeetingView.swift */; };
 		F60772AD2C15D22300438CE0 /* RPSystemBroadcastPickerView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772AC2C15D22300438CE0 /* RPSystemBroadcastPickerView+Ext.swift */; };
 		F60772B22C15DDC500438CE0 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772B12C15DDC400438CE0 /* NetworkMonitor.swift */; };
+		F60772B82C1758BB00438CE0 /* HMSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772B72C1758BB00438CE0 /* HMSManager.swift */; };
+		F60772BA2C17624000438CE0 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60772B92C17624000438CE0 /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		F60772AA2C15D01900438CE0 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		F60772AC2C15D22300438CE0 /* RPSystemBroadcastPickerView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RPSystemBroadcastPickerView+Ext.swift"; sourceTree = "<group>"; };
 		F60772B12C15DDC400438CE0 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		F60772B72C1758BB00438CE0 /* HMSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSManager.swift; sourceTree = "<group>"; };
+		F60772B92C17624000438CE0 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				F607726A2C143B4000438CE0 /* App */,
 				F60772AE2C15D2C100438CE0 /* Extension */,
 				F607725F2C1434D500438CE0 /* Preview Content */,
+				F60772B72C1758BB00438CE0 /* HMSManager.swift */,
+				F60772B92C17624000438CE0 /* NotificationManager.swift */,
 			);
 			path = ScreenShare;
 			sourceTree = "<group>";
@@ -301,9 +307,11 @@
 			files = (
 				F607725C2C1434D200438CE0 /* ContentView.swift in Sources */,
 				F60772B22C15DDC500438CE0 /* NetworkMonitor.swift in Sources */,
+				F60772B82C1758BB00438CE0 /* HMSManager.swift in Sources */,
 				F60772AD2C15D22300438CE0 /* RPSystemBroadcastPickerView+Ext.swift in Sources */,
 				F60772A92C15D00D00438CE0 /* JoiningView.swift in Sources */,
 				F60772AB2C15D01900438CE0 /* MeetingView.swift in Sources */,
+				F60772BA2C17624000438CE0 /* NotificationManager.swift in Sources */,
 				F607725A2C1434D200438CE0 /* ScreenShareApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

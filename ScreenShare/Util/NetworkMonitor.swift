@@ -9,7 +9,7 @@ import Foundation
 import Network
 
 @Observable
-class NetworkMonitor {
+class NetworkMonitor: ObservableObject {
     private let networkMonitor = NWPathMonitor()
        private let workerQueue = DispatchQueue(label: "com.screenShare.networkMonitor")
        var isConnected = false
