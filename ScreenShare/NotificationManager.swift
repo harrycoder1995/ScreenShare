@@ -17,9 +17,10 @@ class NotificationManager: NSObject {
         super.init()
         UNUserNotificationCenter.current().delegate = self
         
-        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
-            self.handleNotification(roomCode: "crs-tzqn-wuz")
-        }
+        //Code for testing the notification flow
+//        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+//            self.handleNotification(roomCode: "crs-tzqn-wuz")
+//        }
     }
     
     //Request For notification
@@ -32,17 +33,18 @@ class NotificationManager: NSObject {
         }
     }
     
-    func handleNotification(roomCode: String?) {
-        self.roomCode = roomCode
-        NotificationCenter.default.post(name: Notification.Name("onRoomCodeRecieved"), object: nil)
-    }
+    //Code for testing purpose
+//    func handleNotification(roomCode: String?) {
+//        self.roomCode = roomCode
+//        NotificationCenter.default.post(name: Notification.Name("onRoomCodeRecieved"), object: nil)
+//    }
     
 }
 
 extension NotificationManager: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         roomCode = response.notification.request.content.userInfo["roomCode"] as? String
-        
+        NotificationCenter.default.post(name: Notification.Name("onRoomCodeRecieved"), object: nil)
         completionHandler()
     }
     

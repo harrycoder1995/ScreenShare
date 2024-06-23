@@ -31,4 +31,16 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         return true
     }
     
+    
+    //Method to get the token if registeration is successful
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
+        print(token)
+    }
+    
+    //Method will print the error if failed to register.
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: any Error) {
+        print("Fail to register for remote notification.", error.localizedDescription)
+    }
+    
 }
